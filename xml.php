@@ -2,13 +2,20 @@
 
 $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?action=template&template=getHierarchyByMarketType&classId=13&marketSort=--&filterBIR=N");
 
-$data = $xml->response->williamhill->class->type->market;
+$data = $xml->response->williamhill->class->type;
 
-$ps = $data->participant;
+$classics = $data->getElementById('749');
+
+foreach($classics as $classic)
+echo "<h1>" . $classic->name . "</h1>";
+{
+    
+$ps = $classic->participant;
 
 foreach($ps as $p)
-
 {
     echo $p['name']." - ".$p['odds']."<br />";
 }
+
+} //end foreach classics
 ?>
