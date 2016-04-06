@@ -6,13 +6,13 @@ $market = $xml->response->williamhill->class->type[1]->market;
 
 foreach($market as $mark){
   echo "<h1>" . $mark->attributes()->name . "</h1>\n";
+  echo "<table>\n<thead>\n<th>Horse</th> <th>Price</th>\n</thead>\n<tbody>\n";
  
  
 foreach ($mark->participant as $part){
-    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds . "</p>\n\n";
+    echo "\n<tr>\n<td>" . $part->attributes()->name . "</td> <td>" . round(sqrt((100/$part->attributes()->decimalodds))) . "</td>\n</tr>\n";
   }
- 
- 
+ echo "</tbody>\n</table>";
 }
 
 #print_r($output);
