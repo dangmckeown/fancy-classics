@@ -4,7 +4,7 @@ $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?a
 
 $data = $xml->response->williamhill->class->type;
 
-$classics = $data->749;
+$classics = $data->market;
 
 echo $classics;
 
