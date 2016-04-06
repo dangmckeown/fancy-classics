@@ -1,0 +1,5 @@
+<?php
+
+$xml = "Hi there";
+
+?>
