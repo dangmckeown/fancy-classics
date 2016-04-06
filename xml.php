@@ -5,12 +5,12 @@ $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?a
 $output = $xml->response->williamhill->class;
 
 foreach($output->type[1]->market as $market){
-  echo "<h1>" . $market->attributes()->name . "</h1>";
+  echo "<h1>" . $market->attributes()->name . "</h1>\n";
  
  
- foreach ($market->participant as $part){
-    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds "</p>\n\n";
-  }
+# foreach ($market->participant as $part){
+#    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds "</p>\n\n";
+#  }
  
  
 }
