@@ -1,5 +1,8 @@
 <?php
 
 $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?action=template&template=getHierarchyByMarketType&classId=13&marketSort=--&filterBIR=N");
-var_dump($xml);
+foreach ($xml as $x){
+echo "<hr />"; 
+var_dump($x);
+}
 ?>
