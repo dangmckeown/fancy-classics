@@ -6,6 +6,9 @@ $data = $xml->response->williamhill->class->type;
 
 $classics = $data->getElementById('749');
 
+echo $classics;
+
+/*
 foreach($classics as $classic)
 echo "<h1>" . $classic->name . "</h1>";
 {
@@ -18,4 +21,7 @@ foreach($ps as $p)
 }
 
 } //end foreach classics
+
+*/
+
 ?>
