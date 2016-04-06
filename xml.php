@@ -4,6 +4,8 @@ $renewals = array();
 $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?action=template&template=getHierarchyByMarketType&classId=13&marketSort=--&filterBIR=N");
 $output = $xml->response->williamhill->class;
 
-print_r($output);
+print_r($output->type[1]->market);
+
+#print_r($output);
 
 ?>
