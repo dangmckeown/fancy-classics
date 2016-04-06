@@ -5,7 +5,7 @@ $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?a
 $market = $xml->response->williamhill->type[1]->market;
 
 foreach($market as $mark){
-  echo "<h1>" . $mark->name . "</h1>\n";
+  echo "<h1>" . $mark->attributes()->name . "</h1>\n";
  
  
 # foreach ($market->participant as $part){
