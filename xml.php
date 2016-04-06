@@ -8,9 +8,9 @@ foreach($market as $mark){
   echo "<h1>" . $mark->attributes()->name . "</h1>\n";
  
  
-# foreach ($market->participant as $part){
-#    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds "</p>\n\n";
-#  }
+foreach ($mark->participant as $part){
+    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds "</p>\n\n";
+  }
  
  
 }
