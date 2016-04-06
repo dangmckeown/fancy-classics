@@ -1,6 +1,6 @@
 <?php
 
-<?php
+
 //invalid xml file
 $xmlparser = xml_parser_create();
 
@@ -12,7 +12,7 @@ xml_parse_into_struct($xmlparser,$xmldata,$values);
 
 xml_parser_free($xmlparser);
 print_r($values);
-?>
+
 
 /*
 $dom = new DOMDocument();
