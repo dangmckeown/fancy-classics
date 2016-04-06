@@ -9,7 +9,7 @@ foreach($market as $mark){
  
  
 foreach ($mark->participant as $part){
-    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds "</p>\n\n";
+    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds . "</p>\n\n";
   }
  
  
