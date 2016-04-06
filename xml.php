@@ -4,7 +4,7 @@ $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?a
 
 $classics = $xml->response->williamhill->class->type->getElementById("749");
 
-$market = $classics->$market;
+$market = $classics->market;
 
 foreach ($market as $mark)
 {
