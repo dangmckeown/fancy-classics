@@ -2,11 +2,10 @@
 
 <?php
 //invalid xml file
-$xmlfile = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?action=template&template=getHierarchyByMarketType&classId=13&marketSort=--&filterBIR=N");
 $xmlparser = xml_parser_create();
 
 // open a file and read data
-$fp = fopen($xmlfile, 'r');
+$fp = fopen("http://cachepricefeeds.williamhill.com/openbet_cdn?action=template&template=getHierarchyByMarketType&classId=13&marketSort=--&filterBIR=N", 'r');
 $xmldata = fread($fp, 4096);
 
 xml_parse_into_struct($xmlparser,$xmldata,$values);
