@@ -2,7 +2,7 @@
 
 $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?action=template&template=getHierarchyByMarketType&classId=13&marketSort=--&filterBIR=N");
 
-$classics = $xml->response->williamhill->class->type->getElementById->("749");
+$classics = $xml->response->williamhill->class->type->getElementById("749");
 
 $market = $classics->$market;
 
