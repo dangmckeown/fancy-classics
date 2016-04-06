@@ -6,10 +6,13 @@ $output = $xml->response->williamhill->class;
 
 foreach($output->type[1]->market as $market){
   echo "<h1>" . $market->attributes()->name . "</h1>";
-  foreach ($market->participant as $part){
+ 
+ /*
+ foreach ($market->participant as $part){
     echo "<p>" . $part->name . " " . $participant->odds "</p>";
   }
-  
+ */
+ 
 }
 
 #print_r($output);
