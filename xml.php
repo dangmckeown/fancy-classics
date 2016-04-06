@@ -9,7 +9,7 @@ foreach($output->type[1]->market as $market){
  
  
  foreach ($market->participant as $part){
-    echo "<p>" . $part->name . " " . $part->odds "</p>\n\n";
+    echo "<p>" . $part->attributes()->name . " " . $part->attributes()->odds "</p>\n\n";
   }
  
  
