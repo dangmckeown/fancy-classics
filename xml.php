@@ -6,14 +6,17 @@ $market = $xml->response->williamhill->class->type->market;
 
 foreach ($market as $mark)
 {
+
+echo $mark->attributes()->id;
     
+ /*   
 $ps = $mark->participant;
 
 foreach($ps as $p)
 {
     echo $p['name']." - ".$p['odds']."<br />";
 }
-
+*/
 } //end foreach market
 
 ?>
