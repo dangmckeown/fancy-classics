@@ -5,8 +5,7 @@ $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?a
 $market = $xml->response->williamhill->class->type[1]->market;
 
 foreach($market as $mark){
-  preg_match("/.*2016$/",$mark->attributes()->name,$title);
-  echo "<h1>" . $title . "</h1>\n";
+  echo "<h1>" . $mark->attributes()->name . "</h1>\n";
   echo "<table>\n<thead>\n<th>Horse</th> <th>Price</th>\n</thead>\n<tbody>\n";
  
  
