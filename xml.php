@@ -10,7 +10,7 @@ foreach($market as $mark){
  
  
 foreach ($mark->participant as $part){
-    echo "\n<tr>\n<td>" . $part->attributes()->name . "</td> <td>" . round(sqrt((100/$part->attributes()->decimalodds))) . "</td>\n</tr>\n";
+    echo "\n<tr>\n<td>" . $part->attributes()->name . "</td> <td>" . ceil(sqrt(100/($part->attributes()->decimalodds))) . "</td>\n</tr>\n";
   }
  echo "</tbody>\n</table>";
 }
