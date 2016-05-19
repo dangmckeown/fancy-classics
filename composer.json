@@ -1,8 +1,6 @@
 {
     "name": "dangmckeown/fancy-classics",
-    "description": "Fantasy league rankings for horses entered in English classics",
-    "require-dev": {
-    },
+    "description": "Horse fantasy league",
     "authors": [
         {
             "name": "Daniel McKeown",
