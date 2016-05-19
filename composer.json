@@ -1,14 +1,16 @@
 {
     "name": "dangmckeown/fancy-classics",
-    "description": "Fantasy league ranking for horses entered in UK flat classics",
-    "authors": [
-        {
-            "name": "Dan McKeown",
-            "email": "daniel.mckeown@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
+    "description": "Horse fantasy league thing",
     "require": {
         "heroku/heroku-buildpack-php": "^102.0"
-    }
+    },
+    "require-dev": {
+        "heroku/heroku-buildpack-php": "^102.0"
+    },
+    "authors": [
+        {
+            "name": "Daniel McKeown",
+            "email": "daniel.mckeown@gmail.com"
+        }
+    ]
 }
