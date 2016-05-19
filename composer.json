@@ -1,9 +1,6 @@
 {
     "name": "dangmckeown/fancy-classics",
-    "description": "Horse fantasy league thing",
-    "require": {
-        "heroku/heroku-buildpack-php": "^102.0"
-    },
+    "description": "Fantasy league rankings for horses entered in English classics",
     "require-dev": {
         "heroku/heroku-buildpack-php": "^102.0"
     },
@@ -12,5 +9,6 @@
             "name": "Daniel McKeown",
             "email": "daniel.mckeown@gmail.com"
         }
-    ]
+    ],
+    "require": {}
 }
