@@ -2,7 +2,6 @@
     "name": "dangmckeown/fancy-classics",
     "description": "Fantasy league rankings for horses entered in English classics",
     "require-dev": {
-        "heroku/heroku-buildpack-php": "^102.0"
     },
     "authors": [
         {
