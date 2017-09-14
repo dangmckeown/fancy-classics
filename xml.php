@@ -9,7 +9,7 @@ var_dump($market);
 
 foreach($market as $mark){
   
-  $bull = preg_match("/\s&\s/",$mark->attributes()->name);
+  $bull = preg_match("/\s(any|&)\s/",$mark->attributes()->name);
   
   if($bull){
     continue;
