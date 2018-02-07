@@ -3,6 +3,10 @@ $op = 0;
 $renewals = array();
 $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?action=template&template=getHierarchyByMarketType&classId=13&marketSort=--&filterBIR=N");
 
+print_r($xml);
+
+<hr />
+
 $market = $xml->response->williamhill->class->type[0]->market;
 //type[0] = Chelts
 //type[1] = Classics
