@@ -5,7 +5,7 @@ $xml = simplexml_load_file("http://cachepricefeeds.williamhill.com/openbet_cdn?a
 
 print_r($xml);
 
-<hr />
+echo "<hr />";
 
 $market = $xml->response->williamhill->class->type[0]->market;
 //type[0] = Chelts
